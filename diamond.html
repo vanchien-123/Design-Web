@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE CRYSTAL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="jpg/logodoan.jpg">
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="demo-db/data.js"></script>
+    <script src="demo-db/script.js"></script>
+    <style>
+        #container {
+            width: 1200px;
+            min-height: 500px;
+            margin: 0 auto;
+        }
+
+        #content {
+            margin-top: 100px;
+            min-height: 300px;
+        }
+
+        #content .sp {
+            cursor: pointer;
+            height: 400px;
+            width: 300px;
+            margin: 2rem auto;
+            float: left;
+            margin-right: 50px;
+            box-shadow: 0 0 .3rem rgba(0, 0, 0, .9);
+            border-radius: 10px;
+            position: relative;
+        }
+        #content .sp:hover{
+            border: 1px solid wheat;
+        }
+        #content .sp #image {
+            width: 100%;
+            height: 75%;
+            border-radius: 10px;
+        }
+
+        #content .sp #image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #content .sp  #pay{
+            font-weight: bold;
+            text-align: center;
+            font-size: 15px;
+            height: 10%;
+            cursor: pointer;
+            background-color:aqua ;
+            display: flex;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius:10px ;
+        }
+        #content .sp  #pay .add{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 15px;
+            width: 50%;
+        }
+        #content .sp  #pay #buy{
+            border-bottom-right-radius: 10px;
+            background: red;
+            text-align: center;
+            font-size: 15px;
+            width: 50%;
+        }
+        #content .sp  #pay #buy p{
+            margin-top: 10px;
+            
+        }
+        a h5{
+            font-size: 23px;
+            text-align: center;
+        }
+        #price{
+            text-align: center;
+        }
+
+        .nav-links ul {
+            margin-left: -30px;
+        }
+    </style>
+</head>
+
+<body onload="loadDataDiamond()">
+    <header id="header" class="fixed-top">
+        <a href="index.html" class="logo">
+            <img src="jpg/logodoan.jpg" width="90px" height="90px" alt="">
+            <h4>Ice Crystal</h4>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house-user"></i>Home</a></li>
+                <li>
+                    <a href="product.html"><i class="fa-solid fa-clone"></i>Products</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="diamond.html">Diamond</a></li>
+                            <li><a href="amber.html">Amber</a></li>
+                            <li><a href="amethyst.html">Amethyst</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="new.html"> <i class="fa-solid fa-circle-plus"></i>New Arival</a></li>
+                <li><a href="offer.html"> <i class="fa-solid fa-user"></i>Special offers</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact us</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user"></i>About us</a></li>
+            </ul>
+        </nav>
+        <div class="left">
+            <div class="search-container">
+                <label for="search" class="fas fa-search"></label>
+                <input type="search" placeholder="search" id="search">
+            </div>
+            <a href="cart.html"><div class="fas fa-shopping-cart" ><span id='cartTotalItem'></span></div></a>
+        </div>
+    </header>
+    <div id="container">
+        <div id="content">
+
+        </div>
+    </div>
+
+    <!-- footer section start -->
+    <section id=" footer" class="container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col ">
+                    <a href="#">
+                        <img src="jpg/logodoan.jpg" width="80px" height="80px" alt="">
+                        <h3>Ice Crystal</h3>
+                    </a>
+                    <p>Chúng Tôi Mang Lại Giá Trị Xứng Đáng Với Bạn</p>
+                </div>
+                <div class="col ">
+                    <h3>Office
+                        <div class="underline"><span></span></div>
+                    </h3>
+                    <p>Ice Crystal</p>
+                    <p>102 Nguyen Dinh Chinh Q.Phu Nhuan TP.HCM</p>
+                    <p class="email-id">Ic.Icecrystal@Gmail.Com</p>
+                    <h6>+91 - 012343245756</h6>
+                </div>
+                <div class="col">
+                    <h3>links
+                        <div class="underline"><span></span></div>
+                    </h3>
+                    <div class="nav-links">
+                        <ul>
+                            <li>
+                                <a href="index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="product.html">product</a>
+                            </li>
+                            <li>
+                                <a href="new.html">new arival</a>
+                            </li>
+                            <li>
+                                <a href="offer.html">special offers</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">contact</a>
+                            </li>
+                            <li>
+                                <a href="about.html">about us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col ">
+                    <h3>follow-us
+                        <div class="underline"><span></span></div>
+                    </h3>
+                    <form id="form" action="">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email id " required>
+                        <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Ice Crystal Coppy Right 2022 </p>
+        </footer>
+    </section>
+    <!-- footer section end -->
+
+
+</body>
+
+</html>

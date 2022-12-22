@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE CRYSTAL</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="jpg/logodoan.jpg">
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="demo-db/data.js"></script>
+    <script src="demo-db/script.js"></script>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+    text-transform: capitalize;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    background-color: lightgray;
+    width: 15px;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: gray;
+    border-radius: 8px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr;
+    font-family: "Raleway", sans-serif;
+    background-color: #92ffcc;
+}
+
+h3 {
+    font-size: 0.7em;
+    letter-spacing: 1.2px;
+    color: #a6a6a6;
+}
+
+
+
+/* ----- Product Section ----- */
+.product {
+    margin-left: 25%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    padding: 2.5em 0;
+    min-width: 600px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* ----- Photo Section ----- */
+.photo-main {
+    border-radius: 6px 6px 0 0;
+
+}
+
+.photo-main .controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+    color: #fff;
+}
+
+.photo-main .controls i {
+    cursor: pointer;
+}
+
+
+#imgs{
+    position: absolute;
+	max-width: 110%;
+}
+.product__photo {
+    position: relative;
+}
+
+.photo-container {
+    position: absolute;
+    left: -2.5em;
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.photo-main .controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+    color: #fff;
+}
+
+.photo-main .controls i {
+    cursor: pointer;
+}
+
+.photo-main .controls img {
+    width: 100%;
+    filter: drop-shadow(1px 1px 3px #a6a6a6);
+    position: absolute;
+    left: -3.5em;
+    top: 2em;
+    filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+}
+#imgs{
+    width:100%;
+    height: 100%;
+}
+
+
+/* ----- Informations Section ----- */
+.product__info {
+    padding: 0.8em 0;
+}
+
+.product__info ul{
+    list-style-type: none;
+}
+.title h1 {
+    margin-bottom: 0.1em;
+    color: #4c4c4c;
+    font-size: 1.5rem;
+    font-weight:bold ;
+}
+
+.title span {
+    font-size: 0.7em;
+    color: #a6a6a6;
+}
+
+.price {
+    margin: 1.5em 0;
+    color: #ff3f40;
+    font-size: 1.2em;
+}
+
+.price span {
+    padding-left: 0.15em;
+    font-size: 2.9em;
+}
+
+.amout {
+    overflow: auto;
+}
+
+.amout h3 {
+    font-size: 20px;
+    margin-bottom: 1.1em;
+}
+
+.amout input {
+    width: 55px;
+    height: 35px;
+    padding: 3px;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+.buy--btn {
+    margin: 20px;
+    padding: 1.5em 3.1em;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    color: #fff;
+    background-color: #ff3f40;
+    box-shadow: 2px 2px 25px -7px #4c4c4c;
+    cursor: pointer;
+}
+
+.buy--btn:active {
+    transform: scale(0.97);
+}
+
+.description {
+    clear: left;
+    margin: 2em 0;
+}
+
+.description h3 {
+    margin-bottom: 1em;
+}
+
+.descriptionul {
+    font-size: 0.8em;
+    list-style: disc;
+    margin-left: 1em;
+}
+
+.description li {
+    text-indent: -0.6em;
+    margin-bottom: 0.5em;
+}
+.fa-square-check{
+    color: rgb(32, 212, 152);
+}
+footer {
+    margin-left: -20px;
+    margin-top: 100px;
+    padding: 2rem 0;
+    background: rgb(241, 234, 234);
+    width: 100vw;
+    bottom: 0;
+    color: black;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+footer .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer .row .col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+footer .row .col a img {
+    border-radius:50% ;
+    width: 80px;
+    margin-bottom: 30px;
+}
+footer .row .col h3 {
+    font-weight: bold;
+    font-size: 20px;
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+.nav-links ul li {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+.nav-links ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.nav-links ul li a:hover{
+    border-bottom:1px solid cornflowerblue;
+}
+
+#form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .fa-envelope {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#form input {
+    width: 100%;
+    background: transparent;
+    color: rgb(18, 2, 2);
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+form button .fa-paper-plane {
+    font-size: 16px;
+    color: black;
+}
+
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+footer .row hr {
+    color: rgb(1, 8, 16);
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.underline {
+    margin-top: 10px;
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 1s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 80%;
+    }
+}
+#header {
+    display: flex;
+    max-width: 100%;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+    color: rgb(239, 229, 229);
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    color: white;
+    font-size: 10px;
+}
+
+.logo img {
+    height: 80px;
+    margin-bottom: 2px;
+    padding: 0rem;
+}
+
+.logo h1 {
+    display: inline;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+#header .navbar {
+    float: left;
+    width: 70%;
+}
+
+#header .navbar ul {
+    margin-left: -150px;
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .navbar ul li {
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+#header .navbar ul li a {
+    margin: 20px;
+
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+#header .navbar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: black;
+    margin-left: -15px;
+}
+
+#header .navbar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+#header .navbar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+#header .navbar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+#header .navbar ul li:hover .sub-menu-1 ul li a:hover {
+    color: rgb(36, 36, 172);
+}
+
+#header .left {
+    float: right;
+    width: 1%;
+}
+
+#header .left .fa-shopping-cart {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#header .left .search-container {
+    display: inline;
+    position: absolute;
+}
+
+#header .left .search-container #search {
+    position: absolute;
+    top: -13px;
+    right: .8rem;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    padding: 0 10px;
+    border-radius: 5rem;
+}
+
+#header .left .search-container #search:hover {
+    width: 200px;
+}
+
+#header .left .search-container .fa-search {
+    position: absolute;
+    left: -41px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    color: #333;
+}
+
+#header .left .search-container .fa-search:hover~#search {
+    width: 200px;
+}
+    </style>
+  
+</head>
+
+<body>
+    <header id="header" class="fixed-top"> 
+        <a href="index.html" class="logo">
+            <img src="jpg/logodoan.jpg" width="90px" height="90px" alt="">
+            <h4>Ice Crystal</h4>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house-user"></i>Home</a></li>
+                <li>
+                    <a href="product.html"><i class="fa-solid fa-clone"></i>Products</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="diamond.html">Diamond</a></li>
+                            <li><a href="amber.html">Amber</a></li>
+                            <li><a href="amethyst.html">Amethyst</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="new.html"> <i class="fa-solid fa-circle-plus"></i>New Arival</a></li>
+                <li><a href="offer.html"> <i class="fa-solid fa-user"></i>Special offers</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact us</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user"></i>About us</a></li>
+            </ul>
+        </nav>
+        <div class="left">
+            <div class="search-container">
+                <label for="search" class="fas fa-search"></label>
+                <input type="search" placeholder="search" id="search">
+            </div>
+            <a href="cart.html">
+                <div class="fas fa-shopping-cart"><span id='cartTotalItem'></span></div>
+            </a>
+        </div>
+    </header> -->
+    <!-- new arival -->
+    <script>
+        $(document).ready(function(){
+             id = localStorage.getItem('id');
+            //  alert(id);
+             showDetail()
+
+        });
+     </script>
+    <div id="product_detail">
+        
+    </div>
+    <!-- footer section start -->
+    <section id=" footer" class="container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col ">
+                    <a href="#">
+                        <img src="jpg/logodoan.jpg" width="80px" height="80px" alt="">
+                        <h3>Ice Crystal</h3>
+                    </a>
+                    <p>Chúng Tôi Mang Lại Giá Trị Xứng Đáng Với Bạn</p>
+                </div>
+                <div class="col ">
+                    <h3>Office
+                        <div class="underline"><span></span></div>
+                    </h3>
+                    <p>Ice Crystal</p>
+                    <p>102 Nguyen Dinh Chinh Q.Phu Nhuan TP.HCM</p>
+                    <p class="email-id">Ic.Icecrystal@Gmail.Com</p>
+                    <h6>+91 - 012343245756</h6>
+                </div>
+                <div class="col">
+                    <h3>links
+                        <div class="underline"><span></span></div>
+                    </h3>
+                    <div class="nav-links">
+                        <ul>
+                            <li>
+                                <a href="index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="product.html">product</a>
+                            </li>
+                            <li>
+                                <a href="new.html">new arival</a>
+                            </li>
+                            <li>
+                                <a href="offer.html">special offers</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">contact</a>
+                            </li>
+                            <li>
+                                <a href="about.html">about us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col ">
+                    <h3>follow-us
+                        <div class="underline"><span></span></div>
+                    </h3>
+                    <form id="form" action="">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email id " required>
+                        <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Ice Crystal Coppy Right 2022 </p>
+        </footer>
+    </section>
+    <!-- footer section end -->
+
+
+</body>
+
+</html>
